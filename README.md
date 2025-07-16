@@ -56,10 +56,15 @@ ls logs/
 
 cat logs/logsentinel_(Get-digits-from-terminal).log
 
+
 cp test/sample_syslog.log /tmp/fake_auth.log
+
 AUTHLOG="/tmp/fake_auth.log" (Change to this for temproary)
+
 bash monitor.sh
+
 cat /tmp/logsentinel_report.txt
+
 ls logs/
 
 
