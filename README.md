@@ -13,12 +13,21 @@
 
 ## 📂 Structure
 
-logsentinel/
-├── monitor.sh
-├── config.env
-├── setup_cron.sh
-├── logs/
-└── test/
+LogSentinel/
+
+├── logs/                          # Archived reports saved here
+│   └── logsentinel_*.log          # (auto-generated) timestamped reports
+│
+├── test/                          # Sample logs for testing
+│   └── sample_syslog.log
+│
+├── .gitignore                     # Ignore env files, logs, etc.
+├── config.env                     # Configuration (email, thresholds)
+├── monitor.sh                     # Main script that scans logs
+├── setup_cron.sh                  # Helper script to schedule monitor.sh
+├── logsentinel.sh                 # 🔹 CLI menu interface (new)
+├── README.md                      # Project overview and usage guide
+
 
 
 ## 🔧 Setup
