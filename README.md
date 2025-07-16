@@ -51,7 +51,9 @@ LogSentinel/
 ## How to run (commands)
 cat /tmp/logsentinel_report.txt
 
+
 ls logs/
+
 cat logs/logsentinel_(Get-digits-from-terminal).log
 
 cp test/sample_syslog.log /tmp/fake_auth.log
